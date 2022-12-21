@@ -92,6 +92,14 @@
 <p>删除数据</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete from 表名 where 条件</span><br></pre></td></tr></table></figure>
 
+<h2 id="DQL数据库查询语言）"><a href="#DQL数据库查询语言）" class="headerlink" title="DQL数据库查询语言）"></a>DQL数据库查询语言）</h2><h3 id="单表查询"><a href="#单表查询" class="headerlink" title="单表查询"></a>单表查询</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select 查询的列 from 表名</span><br><span class="line">select 查询列 from 表名 where 条件</span><br></pre></td></tr></table></figure>
+
+<p>可在后面加上 order by[asc|desc]进行排序</p>
+<p>count（列） 统计所有的行数</p>
+<p>sum（列）求某列总和</p>
+<p>使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select sex,count(*) from student group by sex</span><br></pre></td></tr></table></figure>
+
 
       
     </div>

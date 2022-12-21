@@ -15,7 +15,7 @@
 <meta property="og:description" content="Mysql学习之路1.在MySQL命令行界面进行基础操作 用navicat辅助 2参考资料(6条消息) MySQL修改表（ALTER TABLE语句）_cache2021的博客-CSDN博客_mysql 修改表语句包括修改表 删除表 等基础命令。 DDL(数据库定义语言)创建数据库 删除数据库 创建表 修改表 删除表 DML(数据库操纵语言)插入数据 1insert into 表名 values(">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-18T14:26:29.590Z">
-<meta property="article:modified_time" content="2022-12-19T15:35:16.965Z">
+<meta property="article:modified_time" content="2022-12-21T08:51:51.659Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -93,6 +93,14 @@
 
 <p>删除数据</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete from 表名 where 条件</span><br></pre></td></tr></table></figure>
+
+<h2 id="DQL数据库查询语言）"><a href="#DQL数据库查询语言）" class="headerlink" title="DQL数据库查询语言）"></a>DQL数据库查询语言）</h2><h3 id="单表查询"><a href="#单表查询" class="headerlink" title="单表查询"></a>单表查询</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select 查询的列 from 表名</span><br><span class="line">select 查询列 from 表名 where 条件</span><br></pre></td></tr></table></figure>
+
+<p>可在后面加上 order by[asc|desc]进行排序</p>
+<p>count（列） 统计所有的行数</p>
+<p>sum（列）求某列总和</p>
+<p>使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select sex,count(*) from student group by sex</span><br></pre></td></tr></table></figure>
 
 
       
